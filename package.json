@@ -1,0 +1,16 @@
+{
+  "name": "semantic-sass",
+  "version": "2.2.4",
+  "title": "Semantic Sass for Burt",
+  "author": "Sebastian Sandberg",
+  "license": "MIT",
+  "scripts": {
+    "install": "gulp install"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "0.0.14",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2"
+  }
+}
