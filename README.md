@@ -149,12 +149,12 @@ semantic_icon('add', id: 'id')
 ## Build the files to the documention
 
 This requires that you have the semantic-UI-docs folder adjacent to the folder of this repo
-
+```
   dev_folder/
       semantic-ui-sass/
       docs/
       ...
-
+```
 First run the command `npm install`
 
 To build the docs run
