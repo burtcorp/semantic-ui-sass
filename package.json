@@ -5,7 +5,8 @@
   "author": "Sebastian Sandberg",
   "license": "MIT",
   "scripts": {
-    "install": "gulp install"
+    "build-docs": "gulp build-docs",
+    "serve-docs": "gulp serve-docs"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

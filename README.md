@@ -146,6 +146,26 @@ semantic_icon(:add, :sign)
 semantic_icon('add', id: 'id')
 # => <i class="add icon" id="id"></i>
 ```
+## Build the files to the documention
+
+This requires that you have the semantic-UI-docs folder adjacent to the folder of this repo
+
+  dev_folder/
+      semantic-ui-sass/
+      semantic-ui-docs/
+      ...
+
+First run the command `npm install`
+
+To build the docs run
+```
+  npm run build-docs
+```
+
+To continue serving the files to the documentation folder run the following script:
+```
+  npm run serve-docs
+```
 
 ## TODO
 
