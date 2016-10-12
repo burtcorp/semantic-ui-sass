@@ -23,7 +23,7 @@
   font-weight: bold;
   line-height: 1.2857em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: white;
 }
 .ui.header:first-child {
   margin-top: -0.14285em;
@@ -43,7 +43,7 @@
   margin: 0em;
   font-size: 1rem;
   line-height: 1.2em;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 /*--------------
@@ -298,7 +298,7 @@ h5.ui.header .sub.header {
   color: #FFFFFF;
 }
 .ui.inverted.header .sub.header {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.55);
 }
 .ui.inverted.attached.header {
   background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
