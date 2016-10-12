@@ -2,3 +2,24 @@ $import-google-fonts: true !default;
 $font-url: 'proxima-nova' !default;
 $font-name: 'proxima-nova' !default;
 $font-family: $font-name, 'proxima-nova', Arial, Helvetica, sans-serif !default;
+
+$text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+$button-shadow: 0 3px 6px rgba(0,0,0,.15);
+$button-padding: 0.825em 1.5em 0.825em;
+$button-radius: 0.325rem;
+$button-border: 1px solid rgba(255, 255, 255, 0.2);
+$button-border-hover: 1px solid rgba(255, 255, 255, 0.4);
+
+$button-primary: #0A7DFF;
+$button-primary-hover: #2C8BF5;
+$button-secondary: #6B7077;
+$button-secondary-hover: #7b8188;
+$button-positive: #24D04C;
+$button-positive-hover: #2FDE58;
+$button-negative: #FF4B4B;
+$button-negative-hover: #FC5E5E;
+
+$white: #FFFFFF;
+$text-color: rgba(255,255,255,.6);
+$text-color-inverted: rgba(0,0,0,.7);
