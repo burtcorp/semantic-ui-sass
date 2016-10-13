@@ -8,8 +8,12 @@ $text-shadow: 0 1px 3px rgba(0,0,0,.5);
 $button-shadow: 0 3px 6px rgba(0,0,0,.15);
 $button-padding: 0.825em 1.5em 0.825em;
 $button-radius: 0.325rem;
-$button-border: 1px solid rgba(255, 255, 255, 0.2);
+$button-border: 1px solid rgba(255, 255, 255, 0.15);
 $button-border-hover: 1px solid rgba(255, 255, 255, 0.4);
+
+$input-bg: rgba(0, 0, 0, 0.4);
+$input-padding: 0.685em 1em 0.685em;
+$input-inverted-placeholder: rgba(0,0,0,.4);
 
 $button-primary: #0A7DFF;
 $button-primary-hover: #2C8BF5;
@@ -23,3 +27,4 @@ $button-negative-hover: #FC5E5E;
 $white: #FFFFFF;
 $text-color: rgba(255,255,255,.6);
 $text-color-inverted: rgba(0,0,0,.7);
+$text-error: #FF7B7B;
