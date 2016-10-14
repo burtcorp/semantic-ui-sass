@@ -245,7 +245,7 @@
   font-size: 1em !important;
   padding: 0.78571429em 1.14285714em !important;
   background: transparent !important;
-  color: white !important;
+  color: $white !important;
   text-transform: none !important;
   font-weight: normal !important;
   box-shadow: none !important;
@@ -575,11 +575,11 @@ Floated Menu / Item
   background: none;
   padding: 0.5em 1.33333333em;
   font-size: 0.85714286em;
-  color: rgba(255, 255, 255, 0.55);
+  color: $text-color;
 }
 .ui.vertical.menu .item .menu a.item:hover,
 .ui.vertical.menu .item .menu .link.item:hover {
-  color: white;
+  color: $white;
 }
 .ui.vertical.menu .menu .item:before {
   display: none;
@@ -606,7 +606,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: white;
+  color: $white;
 }
 
 /*--------------
@@ -630,7 +630,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.92857143em 1.42857143em;
-  color: white;
+  color: $white;
 }
 .ui.tabular.menu .item:before {
   display: none;
@@ -953,7 +953,7 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  color: white;
+  color: $white;
 }
 
 /* Pressed */
