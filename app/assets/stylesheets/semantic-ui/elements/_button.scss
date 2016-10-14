@@ -723,7 +723,8 @@
   text-transform: none;
   text-shadow: none !important;
   box-shadow: none;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border: $button-border !important;
+  padding: 0.813em 1.5em 0.813em;
 }
 .ui.basic.buttons {
   box-shadow: none;
