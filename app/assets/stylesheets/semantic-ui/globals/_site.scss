@@ -31,9 +31,9 @@ body {
   min-width: 320px;
   background: #FFFFFF;
   font-family: $font-family;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: $text-color;
   font-smoothing: antialiased;
 }
 
