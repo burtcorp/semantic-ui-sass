@@ -1,20 +1,26 @@
-$font-url: 'proxima-nova';
-$import-google-fonts: 'proxima-nova';
+// Fonts
+$font-url: '';
+$import-google-fonts: false;
 $font-name: 'proxima-nova' !default;
 $font-family: $font-name, Arial, Helvetica, sans-serif !default;
 
+// Global
+$white: #FFFFFF;
 $text-shadow: 0 1px 3px rgba(0,0,0,.5);
 
+// Button Effects
 $button-shadow: 0 3px 6px rgba(0,0,0,.25);
 $button-padding: 0.875em 1.5em 0.875em;
 $button-radius: 0.425rem;
 $button-border: 1px solid rgba(255, 255, 255, 0.15);
 $button-border-hover: 1px solid rgba(255, 255, 255, 0.4);
 
+// Input Styling
 $input-bg: rgba(0, 0, 0, 0.4);
 $input-padding: 0.685em 1em 0.685em;
 $input-color-inverted-placeholder: rgba(0,0,0,.4);
 
+// Button Gradients
 $button-primary-gradient: linear-gradient(#4DB1D8, #1274B2);
 $button-primary-gradient-hover: linear-gradient(#6ECBEF, #177BBA);
 $button-secondary-gradient: linear-gradient(#838890, #5F636A);
@@ -24,14 +30,19 @@ $button-positive-gradient-hover: linear-gradient(#8BFF6F, #21AD31);
 $button-negative-gradient: #FF4B4B;
 $button-negative-gradient-hover: #FC5E5E;
 
-$white: #FFFFFF;
+// Text Color
 $title-color-inverted: rgba(0,0,0,.85);
 $text-color: rgba(255,255,255,.6);
 $text-color-inverted: rgba(0,0,0,.7);
 $text-error: #FF7B7B;
+$text-color-disabled: rgba(255, 255, 255, 0.4);
 
+// Dropdown Styling
 $dropdown-hover-bg: #ebf7ff;
 
+// Divider Styling
 $divider-color: 1px solid rgba(255, 255, 255, 0.05);
 $divider-color-inverted: 1px solid rgba(0, 0, 0, 0.05);
-$disabled-text-color: rgba(255, 255, 255, 0.4);
+
+// Transitions
+$ease-in-out: all 0.3s ease 0s;
