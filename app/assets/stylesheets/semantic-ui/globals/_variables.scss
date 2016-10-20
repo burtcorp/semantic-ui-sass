@@ -27,8 +27,8 @@ $button-secondary-gradient: linear-gradient(#838890, #5F636A);
 $button-secondary-gradient-hover: linear-gradient(#9CA1A8, #696D74);
 $button-positive-gradient: linear-gradient(#6AF04A, #1B9A29);
 $button-positive-gradient-hover: linear-gradient(#8BFF6F, #21AD31);
-$button-negative-gradient: #FF4B4B;
-$button-negative-gradient-hover: #FC5E5E;
+$button-negative-gradient: linear-gradient(#FC6C6C, #CC3030);
+$button-negative-gradient-hover: linear-gradient(#FF8D8D, #E04545);
 
 // Text Color
 $title-color-inverted: rgba(0,0,0,.85);
