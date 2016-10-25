@@ -7,6 +7,8 @@ $font-family: $font-name, Arial, Helvetica, sans-serif !default;
 // Global
 $white: #FFFFFF;
 $text-shadow: 0 1px 3px rgba(0,0,0,.5);
+$box-shadow: 0 3px 6px rgba(0,0,0,.5);
+$box-radius: 0.485rem;
 
 // Button Effects
 $button-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -19,6 +21,9 @@ $button-border-hover: 1px solid rgba(255, 255, 255, 0.4);
 $input-bg: rgba(0, 0, 0, 0.4);
 $input-padding: 0.685em 1em 0.685em;
 $input-color-inverted-placeholder: rgba(0,0,0,.4);
+
+//Box Gradients
+$box-gray-gradient: linear-gradient(#FFFFFF, #DEDEDE);
 
 // Button Gradients
 $button-primary-gradient: linear-gradient(#4DB1D8, #1274B2);
@@ -33,7 +38,7 @@ $button-negative-gradient-hover: linear-gradient(#FF8D8D, #E04545);
 // Text Color
 $title-color-inverted: rgba(0,0,0,.85);
 $text-color: rgba(255,255,255,.6);
-$text-color-inverted: rgba(0,0,0,.7);
+$text-color-inverted: rgba(0,0,0,.6);
 $text-error: #FF7B7B;
 $text-color-disabled: rgba(255, 255, 255, 0.4);
 
