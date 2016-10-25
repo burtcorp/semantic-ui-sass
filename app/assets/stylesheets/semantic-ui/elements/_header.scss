@@ -210,7 +210,6 @@ h5.ui.header .sub.header {
   margin-bottom: 0.14285714rem;
   font-weight: bold;
   font-size: 0.85714286em;
-  text-transform: uppercase;
   color: '';
 }
 .ui.small.sub.header {
@@ -635,6 +634,8 @@ a.ui.inverted.grey.header:hover {
   box-shadow: none;
   border: 1px solid #D4D4D5;
   border-radius: 0.28571429rem;
+  color: $text-color-inverted;
+  text-shadow: none;
 }
 .ui.tiny.block.header {
   font-size: 0.85714286rem;
@@ -662,7 +663,8 @@ a.ui.inverted.grey.header:hover {
   margin-left: -1px;
   margin-right: -1px;
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  color: $text-color-inverted;
+  text-shadow: none;
 }
 .ui.attached.block.header {
   background: #F3F4F5;
