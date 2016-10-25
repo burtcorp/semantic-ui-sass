@@ -135,6 +135,7 @@ ol.ui.list ol li,
 .ui.list .list > .item > .content,
 .ui.list > .item > .content {
   line-height: 1.14285714em;
+  color: $text-color;
 }
 .ui.list .list > .item > .image + .content,
 .ui.list .list > .item > .icon + .content,
@@ -319,7 +320,7 @@ ol.ui.list ol li,
 .ui.list .list > .disabled.item,
 .ui.list > .disabled.item {
   pointer-events: none;
-  color: $disabled-text-color !important;
+  color: $text-color-disabled !important;
 }
 .ui.inverted.list .list > .disabled.item,
 .ui.inverted.list > .disabled.item {
@@ -351,11 +352,11 @@ ol.ui.list ol li,
 }
 .ui.inverted.list .list > .item .header,
 .ui.inverted.list > .item .header {
-  color: $title-color-inverted;
+  color: $white;
 }
 .ui.inverted.list .list > .item .description,
 .ui.inverted.list > .item .description {
-  color: $text-color-inverted;
+  color: $text-color;
 }
 
 /* Item Link */
@@ -675,6 +676,8 @@ ol.ui.horizontal.list li:before,
 
 .ui.divided.list > .item {
   border-top: $divider-color;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .ui.divided.list .list > .item {
   border-top: none;
@@ -763,6 +766,7 @@ ol.ui.horizontal.list li:before,
   padding-right: 0.5em;
   padding-top: 1em;
   padding-bottom: 1em;
+  color: $white;
 }
 .ui.celled.list > .item:last-child {
   border-bottom: $divider-color;
@@ -809,6 +813,7 @@ ol.ui.horizontal.list li:before,
   margin-left: 0em;
   margin-right: 0em;
   padding-bottom: 0.21428571em;
+  color: $text-color;
 }
 .ui.celled.ordered.list .list > .item {
   padding-left: 1em;
