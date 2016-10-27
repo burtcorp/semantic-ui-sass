@@ -112,11 +112,10 @@
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
   font-family: $font-family;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: normal;
   line-height: 1em;
-  color: #1B1C1D;
-  text-transform: uppercase;
+  color: $white;
   text-align: center;
 }
 
@@ -128,9 +127,8 @@
 .ui.statistic > .label {
   font-family: $font-family;
   font-size: 1em;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
-  text-transform: uppercase;
+  font-weight: 400;
+  color: $text-color;
   text-align: center;
 }
 
@@ -161,6 +159,8 @@
   opacity: 1;
   width: auto;
   margin: 0em;
+  vertical-align: top;
+  font-size: 2rem;
 }
 
 /*--------------
@@ -398,11 +398,13 @@
 
 .ui.inverted.statistics .statistic > .value,
 .ui.inverted.statistic .value {
-  color: #FFFFFF;
+  color: $title-color-inverted;
+  text-shadow: none;
 }
 .ui.inverted.statistics .statistic > .label,
 .ui.inverted.statistic .label {
-  color: rgba(255, 255, 255, 0.9);
+  color: $text-color-inverted;
+  text-shadow: none;
 }
 .ui.inverted.red.statistics .statistic > .value,
 .ui.statistics .inverted.red.statistic > .value,
