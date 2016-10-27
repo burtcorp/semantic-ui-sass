@@ -43,7 +43,7 @@
   font-family: $font-family;
   padding: $input-padding;
   background: $input-bg;
-  border: $button-border;
+  border: none;
   color: $white;
   border-radius: $button-radius;
   -webkit-transition: box-shadow 0.1s ease, border-color 0.1s ease;
@@ -92,7 +92,7 @@
 
 .ui.input input:active,
 .ui.input.down input {
-  border-color: $button-border-hover;
+  border-color: none;
   background: $input-bg;
   color: $white;
   box-shadow: none;
@@ -138,7 +138,7 @@
 
 .ui.input.focus input,
 .ui.input input:focus {
-  border-color: $button-border-hover;
+  border-color: none;
   background: $input-bg;
   color: $white;
   box-shadow: none;
@@ -162,7 +162,7 @@
 
 .ui.input.error input {
   background-color: $input-bg;
-  border-color: $button-border;
+  border-color: none;
   color: $white;
   box-shadow: none;
 }
