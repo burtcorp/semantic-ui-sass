@@ -10,22 +10,22 @@ gulp.task('sass', function () {
     .pipe(sass())
     .pipe(replace('image-url', 'url'))
     .pipe(replace('font-url', 'url'))
-    .pipe(gulp.dest('../docs/out/dist/'));
+    .pipe(gulp.dest('../Semantic-UI-Docs/out/dist/'));
 });
 
 gulp.task('fonts', function() {
   gulp.src('./app/assets/fonts/semantic-ui/**/*.*')
-  .pipe(gulp.dest('../docs/out/dist/semantic-ui'))
+  .pipe(gulp.dest('../Semantic-UI-Docs/out/dist/semantic-ui'))
 });
 
 gulp.task('images', function() {
   gulp.src('./app/assets/images/semantic-ui/*.png')
-  .pipe(gulp.dest('../docs/out/dist/semantic-ui/'))
+  .pipe(gulp.dest('../Semantic-UI-Docs/out/dist/semantic-ui/'))
 });
 
 gulp.task('js', function() {
   gulp.src('./app/assets/javascripts/semantic-ui/*.js')
-  .pipe(gulp.dest('../docs/out/dist/components/'))
+  .pipe(gulp.dest('../Semantic-UI-Docs/out/dist/components/'))
 });
 
 gulp.task('min-js', function() {
@@ -36,7 +36,7 @@ gulp.task('min-js', function() {
           min:'.min.js'
       }
   }))
-  .pipe(gulp.dest('../docs/out/dist/components/'))
+  .pipe(gulp.dest('../Semantic-UI-Docs/out/dist/components/'))
 });
 
 gulp.task('build-docs', ['sass', 'fonts', 'images', 'js', 'min-js']);

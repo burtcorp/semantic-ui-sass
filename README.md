@@ -152,7 +152,7 @@ This requires that you have the semantic-UI-docs folder adjacent to the folder o
 ```
   dev_folder/
       semantic-ui-sass/
-      docs/
+      Semantic-UI-Docs/
       ...
 ```
 First run the command `npm install`
