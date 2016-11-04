@@ -22,8 +22,9 @@ $input-bg: rgba(0, 0, 0, 0.4);
 $input-padding: 0.685em 1em 0.685em;
 $input-color-inverted-placeholder: rgba(0,0,0,.4);
 
-//Box Gradients
+//Gradients
 $box-gray-gradient: linear-gradient(#FFFFFF, #DEDEDE);
+$app-switcher-gradient: linear-gradient(to bottom,rgba(0,0,0,.03) 0%,  rgba(0,0,0,.07) 100%);
 
 // Button Gradients
 $button-primary-gradient: linear-gradient(#4DB1D8, #1274B2);
