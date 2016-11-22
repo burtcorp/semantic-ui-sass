@@ -26,7 +26,7 @@
   display: flex;
   margin: 1rem 0em;
   font-family: $font-family;
-  background: $white;
+  background: $box-color-background;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -92,7 +92,7 @@
   background: none;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: $text-color;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
   transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
@@ -414,8 +414,7 @@
 .ui.menu .link.item:hover,
 .ui.menu a.item:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.95);
+  color: $white;
 }
 
 /*--------------
@@ -425,8 +424,9 @@
 .ui.link.menu .item:active,
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.95);
+  background: transparent;
+  color: $white;
+  border-radius: 0.375rem;
 }
 
 /*--------------
@@ -434,10 +434,11 @@
 ---------------*/
 
 .ui.menu .active.item {
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
-  font-weight: normal;
+  color: $white;
+  font-weight: 600;
   box-shadow: none;
+  border-radius: $button-radius;
+  background: $button-secondary-gradient;
 }
 .ui.menu .active.item > i.icon {
   opacity: 1;
@@ -449,8 +450,9 @@
 
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  color: $white;
+  border-radius: $button-radius;
+  background: $button-secondary-gradient-hover;
 }
 
 /*--------------
@@ -639,7 +641,7 @@ Floated Menu / Item
 /* Hover */
 .ui.tabular.menu .item:hover {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.8);
+  color: $white !important;
 }
 
 /* Active */
@@ -698,21 +700,22 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-right: 1px solid #D4D4D5;
 }
 .ui.vertical.tabular.menu .item {
+  color: $text-color;
   background: none;
   border-left: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
   border-right: none;
 }
+
 .ui.vertical.tabular.menu .active.item {
-  background: none $white;
-  color: rgba(0, 0, 0, 0.95);
-  border-color: #D4D4D5;
+  background: $box-color-background !important;
+  color: $white;
+  border-color: none;
   margin: 0px -1px 0px 0px;
-  border-radius: 0.28571429rem 0px 0px 0.28571429rem !important;
+  border-radius: $button-radius !important;
 }
 
 /* Vertical Right Tabular */
@@ -722,9 +725,9 @@ Floated Menu / Item
   box-shadow: none !important;
   border-bottom: none;
   border-right: none;
-  border-left: 1px solid #D4D4D5;
 }
 .ui.vertical.right.tabular.menu .item {
+  color: $text-color;
   background: none;
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -732,11 +735,11 @@ Floated Menu / Item
   border-left: none;
 }
 .ui.vertical.right.tabular.menu .active.item {
-  background: none $white;
-  color: rgba(0, 0, 0, 0.95);
-  border-color: #D4D4D5;
+  background: $box-color-background !important;
+  color: $white;
+  border-color: none;
   margin: 0px 0px 0px -1px;
-  border-radius: 0px 0.28571429rem 0.28571429rem 0px !important;
+  border-radius: $button-radius !important;
 }
 
 /* Dropdown */
@@ -835,23 +838,24 @@ Floated Menu / Item
 .ui.secondary.menu .dropdown.item:hover,
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background: transparent;
+  color: $white;
 }
 
 /* Active */
 .ui.secondary.menu .active.item {
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
-  border-radius: 0.28571429rem;
+  background: transparent;
+  color: $white;
+  font-weight: 600;
 }
 
 /* Active Hover */
 .ui.secondary.menu .active.item:hover {
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background: transparent;
+  color: $white;
+  font-weight: 600;
 }
 
 /* Inverted */
@@ -961,22 +965,22 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:active,
 .ui.secondary.pointing.menu a.item:active {
   background-color: transparent;
-  border-color: rgba(34, 36, 38, 0.15);
+  border-color: $text-color;
 }
 
 /* Active */
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  border-color: #1B1C1D;
+  border-color: $white;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: $white;
 }
 
 /* Active Hover */
 .ui.secondary.pointing.menu .active.item:hover {
-  border-color: #1B1C1D;
-  color: rgba(0, 0, 0, 0.95);
+  border-color: $white;
+  color: $white;
 }
 
 /* Active Dropdown */
@@ -1052,9 +1056,13 @@ Floated Menu / Item
   margin: 0em 0em;
   padding: 0.35714286em 0.5em;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.6);
+  color: $text-color;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
+
+  &:hover, &:active {
+    background: none;
+  }
 }
 
 /* Border */
@@ -1067,10 +1075,13 @@ Floated Menu / Item
 .ui.text.menu .header.item {
   background-color: transparent;
   opacity: 1;
-  color: rgba(0, 0, 0, 0.85);
+  color: $text-color;
   font-size: 0.92857143em;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
+
+  &:hover {
+    color: $text-color;
+  }
 }
 
 /* Image */
@@ -1122,6 +1133,8 @@ Floated Menu / Item
 .ui.text.menu .item:hover {
   opacity: 1;
   background-color: transparent;
+  font-weight: 400;
+  color: $white;
 }
 
 /*--- active ---*/
@@ -1130,14 +1143,16 @@ Floated Menu / Item
   background-color: transparent;
   border: none;
   box-shadow: none;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.95);
+  font-weight: 600;
+  color: $white;
 }
 
 /*--- active hover ---*/
 
 .ui.text.menu .active.item:hover {
   background-color: transparent;
+  font-weight: 600;
+  color: $white;
 }
 
 /* Disable Bariations */
@@ -1806,54 +1821,54 @@ Floated Menu / Item
        Pointing
 --------------------*/
 
-.ui.pointing.menu .item:after {
-  visibility: hidden;
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-          transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  background: none;
-  margin: 0.5px 0em 0em;
-  width: 0.57142857em;
-  height: 0.57142857em;
-  border: none;
-  border-bottom: 1px solid #D4D4D5;
-  border-right: 1px solid #D4D4D5;
-  z-index: 2;
-  -webkit-transition: background 0.1s ease;
-  transition: background 0.1s ease;
-}
-.ui.vertical.pointing.menu .item:after {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  bottom: auto;
-  left: auto;
-  -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
-          transform: translateX(50%) translateY(-50%) rotate(45deg);
-  margin: 0em -0.5px 0em 0em;
-  border: none;
-  border-top: 1px solid #D4D4D5;
-  border-right: 1px solid #D4D4D5;
-}
+// .ui.pointing.menu .item:after {
+//   visibility: hidden;
+//   position: absolute;
+//   content: '';
+//   top: 100%;
+//   left: 50%;
+//   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+//       -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+//           transform: translateX(-50%) translateY(-50%) rotate(45deg);
+//   background: none;
+//   margin: 0.5px 0em 0em;
+//   width: 0.57142857em;
+//   height: 0.57142857em;
+//   border: none;
+//   border-bottom: 1px solid #D4D4D5;
+//   border-right: 1px solid #D4D4D5;
+//   z-index: 2;
+//   -webkit-transition: background 0.1s ease;
+//   transition: background 0.1s ease;
+// }
+// .ui.vertical.pointing.menu .item:after {
+//   position: absolute;
+//   top: 50%;
+//   right: 0%;
+//   bottom: auto;
+//   left: auto;
+//   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+//       -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
+//           transform: translateX(50%) translateY(-50%) rotate(45deg);
+//   margin: 0em -0.5px 0em 0em;
+//   border: none;
+//   border-top: 1px solid #D4D4D5;
+//   border-right: 1px solid #D4D4D5;
+// }
 
 /* Active */
-.ui.pointing.menu .active.item:after {
-  visibility: visible;
-}
-.ui.pointing.menu .active.dropdown.item:after {
-  visibility: hidden;
-}
+// .ui.pointing.menu .active.item:after {
+//   visibility: visible;
+// }
+// .ui.pointing.menu .active.dropdown.item:after {
+//   visibility: hidden;
+// }
 
 /* Don't double up pointers */
-.ui.pointing.menu .dropdown.active.item:after,
-.ui.pointing.menu .active.item .menu .active.item:after {
-  display: none;
-}
+// .ui.pointing.menu .dropdown.active.item:after,
+// .ui.pointing.menu .active.item .menu .active.item:after {
+//   display: none;
+// }
 
 /* Colors */
 .ui.pointing.menu .active.item:hover:after {
