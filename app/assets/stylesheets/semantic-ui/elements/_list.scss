@@ -33,11 +33,13 @@ ol.ui.list:last-child,
   padding-bottom: 0em;
 }
 
+.ui.vertical.menu .active.item:hover {
+  background: none !important;
+}
 
 /*******************************
             Content
 *******************************/
-
 
 /* List Item */
 ul.ui.list li,
