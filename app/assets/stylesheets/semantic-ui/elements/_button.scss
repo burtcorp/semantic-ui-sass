@@ -928,13 +928,13 @@
 .ui.toggle.buttons .active.button,
 .ui.buttons .button.toggle.active,
 .ui.button.toggle.active {
-  background: #586A81;
+  background: $button-positive-gradient;
   text-shadow: none;
   box-shadow: $button-shadow;
   color: $white !important;
 }
 .ui.button.toggle.active:hover {
-  background: #586A81;
+  background: $button-positive-gradient-hover;
   text-shadow: none;
   color: $white !important;
 }
