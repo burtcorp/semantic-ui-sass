@@ -438,7 +438,6 @@
   font-weight: 600;
   box-shadow: none;
   border-radius: $button-radius;
-  background: $button-secondary-gradient;
 }
 .ui.menu .active.item > i.icon {
   opacity: 1;
@@ -865,11 +864,11 @@ Floated Menu / Item
 .ui.secondary.inverted.menu .dropdown.item:hover,
 .ui.secondary.inverted.menu .link.item:hover,
 .ui.secondary.inverted.menu a.item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: none;
   color: $white !important;
 }
 .ui.secondary.inverted.menu .active.item {
-  background: rgba(255, 255, 255, 0.15);
+  background: none;
   color: $white !important;
 }
 
@@ -1053,7 +1052,7 @@ Floated Menu / Item
       -ms-flex-item-align: center;
           align-self: center;
   margin: 0em 0em;
-  padding: 0.35714286em 0.5em;
+  padding: 0.35714286em 0.325em;
   font-weight: normal;
   color: $text-color;
   -webkit-transition: opacity 0.1s ease;
@@ -1380,7 +1379,7 @@ Floated Menu / Item
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
   background: transparent;
-  color: rgba(255, 255, 255, 0.9);
+  color: $text-color;
 }
 .ui.inverted.menu .item.menu {
   background: transparent;
@@ -1420,7 +1419,7 @@ Floated Menu / Item
 .ui.inverted.menu .dropdown.item:hover,
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: none;
   color: $white;
 }
 .ui.vertical.inverted.menu .item .menu a.item:hover,
@@ -1433,14 +1432,14 @@ Floated Menu / Item
 
 .ui.inverted.menu a.item:active,
 .ui.inverted.menu .link.item:active {
-  background: rgba(255, 255, 255, 0.08);
+  background: none;
   color: $white;
 }
 
 /*--- Active ---*/
 
 .ui.inverted.menu .active.item {
-  background: rgba(255, 255, 255, 0.15);
+  background: none;
   color: $white !important;
 }
 .ui.inverted.vertical.menu .item .menu .active.item {
@@ -1448,7 +1447,7 @@ Floated Menu / Item
   color: $white;
 }
 .ui.inverted.pointing.menu .active.item:after {
-  background: #3D3E3F !important;
+  background: none !important;
   margin: 0em !important;
   box-shadow: none !important;
   border: none !important;
@@ -1457,7 +1456,7 @@ Floated Menu / Item
 /*--- Active Hover ---*/
 
 .ui.inverted.menu .active.item:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: none;
   color: $white !important;
 }
 .ui.inverted.pointing.menu .active.item:hover:after {
