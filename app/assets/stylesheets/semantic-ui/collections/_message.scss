@@ -17,14 +17,13 @@
   position: relative;
   min-height: 1em;
   margin: 1em 0em;
-  background: #F8F8F9;
-  padding: 1em 1.5em;
-  line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
-  transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
-  border-radius: 0.28571429rem;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  background: $message-background;
+  padding: 1.5em;
+  line-height: 1em;
+  color: $text-color;
+  border-radius: 0.825rem;
+  box-shadow: $box-shadow;
+  text-shadow: none;
 }
 .ui.message:first-child {
   margin-top: 0em;
@@ -42,8 +41,8 @@
 .ui.message .header {
   display: block;
   font-family: $font-family;
-  font-weight: bold;
-  margin: -0.14285em 0em 0rem 0em;
+  font-weight: 400;
+  color: $white;
 }
 
 /* Default font size */
@@ -107,14 +106,15 @@
   cursor: pointer;
   position: absolute;
   margin: 0em;
-  top: 0.78575em;
-  right: 0.5em;
-  opacity: 0.7;
+  top: 1.125em;
+  right: 1.125em;
+  font-size: 1.25em;
+  color: $text-color;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
 .ui.message > .close.icon:hover {
-  opacity: 1;
+  color: $white;
 }
 
 /* First / Last Element */
@@ -250,7 +250,6 @@
 ---------------*/
 
 .ui.floating.message {
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
 }
 
 /*--------------
@@ -269,80 +268,80 @@
 
 /* Positive */
 .ui.positive.message {
-  background-color: #FCFFF5;
-  color: #2C662D;
+  background-color: $positive-color;
+  color: $white;
 }
 .ui.positive.message,
 .ui.attached.positive.message {
-  box-shadow: 0px 0px 0px 1px #A3C293 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: $box-shadow;
 }
 .ui.positive.message .header {
-  color: #1A531B;
+  color: $white;
 }
 
 /* Negative */
 .ui.negative.message {
-  background-color: #FFF6F6;
-  color: #9F3A38;
+  background-color: $negative-color;
+  color: $white;
 }
 .ui.negative.message,
 .ui.attached.negative.message {
-  box-shadow: 0px 0px 0px 1px #E0B4B4 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: $box-shadow;
 }
 .ui.negative.message .header {
-  color: #912D2B;
+  color: $white;
 }
 
 /* Info */
 .ui.info.message {
-  background-color: #F8FFFF;
-  color: #276F86;
+  background-color: $info-color;
+  color: $white;
 }
 .ui.info.message,
 .ui.attached.info.message {
-  box-shadow: 0px 0px 0px 1px #A9D5DE inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: $box-shadow;
 }
 .ui.info.message .header {
-  color: #0E566C;
+  color: $white;
 }
 
 /* Warning */
 .ui.warning.message {
-  background-color: #FFFAF3;
-  color: #573A08;
+  background-color: $warning-color;
+  color: $white;
 }
 .ui.warning.message,
 .ui.attached.warning.message {
-  box-shadow: 0px 0px 0px 1px #C9BA9B inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: $box-shadow;
 }
 .ui.warning.message .header {
-  color: #794B02;
+  color: $white;
 }
 
 /* Error */
 .ui.error.message {
-  background-color: #FFF6F6;
-  color: #9F3A38;
+  background-color: $negative-color;
+  color: $white;
 }
 .ui.error.message,
 .ui.attached.error.message {
-  box-shadow: 0px 0px 0px 1px #E0B4B4 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: $box-shadow;
 }
 .ui.error.message .header {
-  color: #912D2B;
+  color: $white;
 }
 
 /* Success */
 .ui.success.message {
-  background-color: #FCFFF5;
-  color: #2C662D;
+  background-color: $positive-color;
+  color: $white;
 }
 .ui.success.message,
 .ui.attached.success.message {
-  box-shadow: 0px 0px 0px 1px #A3C293 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: $box-shadow;
 }
 .ui.success.message .header {
-  color: #1A531B;
+  color: $white;
 }
 
 /* Colors */
@@ -469,6 +468,22 @@
   font-size: 1.71428571em;
 }
 
+/* On-Hold - Icon above Message */
+// .ui.error.message:before {
+//   color: $white;
+//   content: "\f071";
+//   font-family: $font-icon;
+//   font-size: 1.25em;
+//   text-align: center;
+//   padding-top: 10px;
+//   width: 36px;
+//   height: 36px;
+//   background: $button-negative-gradient-hover;
+//   border-radius: 30px;
+//   box-shadow: 0 1px 3px rgba(0,0,0,.25);
+//   position: absolute;
+//   top: -20px;
+// }
 
 /*******************************
          Theme Overrides
