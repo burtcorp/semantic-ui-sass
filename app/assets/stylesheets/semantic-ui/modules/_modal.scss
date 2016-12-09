@@ -81,8 +81,9 @@
   margin: 0em;
   padding: 1.25rem 1.5rem;
   box-shadow: none;
-  color: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  color: $title-color-inverted;
+  border-bottom: $divider-color-inverted;
+  text-shadow: none;
 }
 .ui.modal > .header:not(.ui) {
   font-size: 1.42857143rem;
@@ -101,6 +102,8 @@
   line-height: 1.4;
   padding: 1.5rem;
   background: #FFFFFF;
+  color: $text-color-inverted;
+  text-shadow: none;
 }
 .ui.modal > .image.content {
   display: -webkit-box;
@@ -277,7 +280,7 @@
     padding: 1rem 0rem !important;
     box-shadow: none;
   }
-  
+
 /* Let Buttons Stack */
   .ui.modal > .actions {
     padding: 1rem 1rem 0rem !important;
@@ -414,6 +417,7 @@
   top: 1.0535rem;
   right: 1rem;
   color: rgba(0, 0, 0, 0.87);
+  text-shadow: none;
 }
 
 /*--------------
