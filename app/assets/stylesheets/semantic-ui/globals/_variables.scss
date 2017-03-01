@@ -4,6 +4,10 @@ $font-url:'';
 $font-name: 'Din 2014', 'Helvetica Neue' !default;
 $font-family: $font-name, Arial, Helvetica, sans-serif;
 
+// Fonts
+$title-font: 'Din 2014'; // Use for title & subtitle
+$paragraph-font: 'Helvetica Neue'; // Use for paragraph text
+
 // Border Radius
 $border-radius-sm: 6px; // Buttons, Dropdowns & Input Fields
 $border-radius-md: 14px; // Elements within a element using border-radius-lg
@@ -20,11 +24,26 @@ $text-shadow-md: 0 1px 4px 0 rgba(0,0,0,.20); // Prominent
 $text-shadow-lg: 0 2px 4px 0 rgba(0,0,0,.25); // Floating
 
 // Color
-$white-color: rgb(255,255,255); // Pure white
 $title-color: rgba(0,0,0,.8); // Use for H1, H2, H3 & H4
 $text-color: rgba(0,0,0,.6); // Use for standard text
 $paragraph-color: rgba(0,0,0,.4); // Use for paragraph
 $input-border-color: rgba(228,14,69,.5); // Input Field Border
+
+$white-color: #FFFFFF;
+$red-color: #F72758;
+$orange-color: #FA6721;
+$yellow-color: #F9D02E;
+$olive-color: #A9E01E;
+$green-color: #1FD31A;
+$neon-color: #85CED7;
+$teal-color: #3AAEFF;
+$blue-color: #0078FF;
+$violet-color: #9012FE;
+$purple-color: #A23BC5;
+$pink-color: #EB5DAB;
+$brown-color: #DE924E;
+$grey-color: #828A92;
+$black-color: #000000;
 
 // Gradients
 $background-gradient-dark-blue: radial-gradient(55% -97%, #243442 69%, #151E2C 100%);
