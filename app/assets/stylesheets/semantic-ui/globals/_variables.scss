@@ -1,4 +1,45 @@
-$import-google-fonts: true !default;
-$font-url: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' !default;
-$font-name: 'Lato' !default;
-$font-family: $font-name, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
+// Font Import
+$import-google-fonts: false;
+$font-url:'';
+$font-name: 'Din 2014', 'Helvetica Neue' !default;
+$font-family: $font-name, Arial, Helvetica, sans-serif;
+
+// Border Radius
+$border-radius-sm: 6px; // Buttons, Dropdowns & Input Fields
+$border-radius-md: 14px; // Elements within a element using border-radius-lg
+$border-radius-lg: 20px; // Segments, KPI's, Widgets
+
+// Box Shadow
+$box-shadow-sm: 0 1px 4px 0 rgba(0,0,0,0.10); // Subtle
+$box-shadow-md: 0 2px 5px 0 rgba(0,0,0,0.10); // Prominent
+$box-shadow-lg: 0 4px 6px 0 rgba(0,0,0,0.25); // Floating
+
+// Text Shadow
+$text-shadow-sm: 0 1px 2px 0 rgba(0,0,0,.15); // Standard
+$text-shadow-md: 0 1px 4px 0 rgba(0,0,0,.20); // Prominent
+$text-shadow-lg: 0 2px 4px 0 rgba(0,0,0,.25); // Floating
+
+// Color
+$white-color: rgb(255,255,255); // Pure white
+$title-color: rgba(0,0,0,.8); // Use for H1, H2, H3 & H4
+$text-color: rgba(0,0,0,.6); // Use for standard text
+$paragraph-color: rgba(0,0,0,.4); // Use for paragraph
+$input-border-color: rgba(228,14,69,.5); // Input Field Border
+
+// Gradients
+$background-gradient-dark-blue: radial-gradient(55% -97%, #243442 69%, #151E2C 100%);
+$background-gradient-dark-teal: radial-gradient(55% -97%, #1C3844 69%, #0B0E13 100%);
+$background-gradient-white-gray: linear-gradient(-180deg, #FFFFFF 0%, #EDEDED 100%);
+$background-gradient-foggy-gray: linear-gradient(-180deg, #F3F3F3 0%, #D8D8D8 100%);
+
+// Font Size
+$h1-size: 28px;
+$h2-size: 24px;
+$h3-size: 20px;
+$h4-size: 14px;
+$h5-size: 12px;
+$p-size: 14px;
+
+// Text Decoration
+$text-uppercase: uppercase;
+$text-spacing: 1.3px;
