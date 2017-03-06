@@ -27,7 +27,6 @@ $text-shadow-lg: 0 2px 4px 0 rgba(0,0,0,.25); // Floating
 $title-color: rgba(0,0,0,.8); // Use for H1, H2, H3 & H4
 $text-color: rgba(0,0,0,.6); // Use for standard text
 $paragraph-color: rgba(0,0,0,.4); // Use for paragraph
-$input-border-color: rgba(0,0,0,.15); // Input Field Border
 
 $white-color: #FFFFFF;
 $red-color: #F72758;
@@ -48,6 +47,16 @@ $base-color: rgba(0,0,0,.1);
 
 $primary-color: $blue-color;
 $secondary-color: $base-color;
+
+$button-basic-border-color: rgba(0,0,0,.15); // Border color for basic button
+$button-basic-text-color: $text-color; // Text color for basic button
+
+$button-text-base-color: $text-color; // Default buttons text color
+$button-text-hover-color: $title-color; // Default buttons text hover state
+$button-text-active-color: $title-color; // Default buttons text active state
+$button-background-color: $base-color; // Default buttons background color
+
+$input-border-color: rgba(0,0,0,.15); // Border color for input fields
 
 // Gradients
 $background-gradient-dark-blue: radial-gradient(55% -97%, #243442 69%, #151E2C 100%);
