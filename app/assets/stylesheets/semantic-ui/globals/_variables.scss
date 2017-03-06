@@ -57,6 +57,9 @@ $button-text-active-color: $title-color; // Default buttons text active state
 $button-background-color: $base-color; // Default buttons background color
 
 $input-border-color: rgba(0,0,0,.15); // Border color for input fields
+$input-background-color: rgba(255,255,255,.4); // Background for input fields
+$input-text-base-color: $text-color; // Default color for input fields
+$input-text-active-color: $title-color; // Active color for input fieds
 
 // Gradients
 $background-gradient-dark-blue: radial-gradient(55% -97%, #243442 69%, #151E2C 100%);
