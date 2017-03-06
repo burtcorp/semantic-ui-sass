@@ -20,8 +20,8 @@
   outline: none;
   border: none;
   vertical-align: baseline;
-  background: $base-color none;
-  color: $text-color;
+  background: $button-background-color none;
+  color: $button-text-base-color;
   font-family: $title-font;
   margin: 0em 0.25em 0em 0em;
   padding: 0.78571429em 1.5em 0.78571429em;
@@ -55,10 +55,10 @@
 ---------------*/
 
 .ui.button:hover {
-  background-color: $base-color;
+  background-color: $button-background-color;
   background-image: none;
   box-shadow: none;
-  color: $title-color;
+  color: $button-text-hover-color;
 }
 .ui.button:hover .icon {
   opacity: 0.85;
@@ -69,8 +69,8 @@
 ---------------*/
 
 .ui.button:focus {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $button-background-color;
+  color: $button-text-active-color;
   background-image: '' !important;
   box-shadow: none !important;
 }
@@ -84,10 +84,10 @@
 
 .ui.button:active,
 .ui.active.button:active {
-  background-color: $base-color;
+  background-color: $button-background-color;
   background-image: '';
   box-shadow: none;
-  color: $text-color;
+  color: $button-text-base-color;
 }
 
 /*--------------
@@ -95,19 +95,19 @@
 ---------------*/
 
 .ui.active.button {
-  background-color: $base-color;
+  background-color: $button-background-color;
   background-image: none;
   box-shadow: none;
-  color: $text-color;
+  color: $button-text-base-color;
 }
 .ui.active.button:hover {
-  background-color: $base-color;
+  background-color: $button-background-color;
   background-image: none;
   box-shadow: none;
-  color: $text-color;
+  color: $button-text-base-color;
 }
 .ui.active.button:active {
-  background-color: $base-color;
+  background-color: $button-background-color;
   background-image: none;
   box-shadow: none;
 }
@@ -206,7 +206,7 @@
 
 /* Basic Group With Disabled */
 .ui.basic.buttons .ui.disabled.button {
-  border-color: $input-border-color;
+  border-color: $button-basic-border-color;
 }
 
 
@@ -371,7 +371,7 @@
 .ui.inverted.button:hover {
   background: $white-color;
   box-shadow: $box-shadow-sm;
-  color: $text-color;
+  color: $button-text-base-color;
 }
 
 /* Active / Focus */
@@ -379,14 +379,14 @@
 .ui.inverted.button.active {
   background: $white-color;
   box-shadow: $box-shadow-sm;
-  color: $text-color;
+  color: $button-text-base-color;
 }
 
 /* Active Focus */
 .ui.inverted.button.active:focus {
   background: $white-color;
   box-shadow: $box-shadow-sm;
-  color: $text-color;
+  color: $button-text-base-color;
 }
 
 /*-------------------
@@ -423,7 +423,7 @@
   margin: 0px 0px 0px -1px !important;
   padding: '';
   font-size: 1em;
-  border-color: $input-border-color;
+  border-color: $button-basic-border-color;
 }
 
 /* Tag */
@@ -731,9 +731,9 @@
 .ui.basic.buttons .button,
 .ui.basic.button {
   background: transparent none !important;
-  color: $text-color;
+  color: $button-basic-text-color;
   font-weight: normal;
-  border: 1px solid $input-border-color;
+  border: 1px solid $button-basic-border-color;
   border-radius: $border-radius-sm;
   text-transform: none;
   text-shadow: none !important;
@@ -741,7 +741,7 @@
 }
 .ui.basic.buttons {
   box-shadow: none;
-  border: 1px solid $input-border-color;
+  border: 1px solid $button-basic-border-color;
   border-radius: $border-radius-sm;
 }
 .ui.basic.buttons .button {
@@ -750,26 +750,26 @@
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
   background: none !important;
-  color: $text-color !important;
+  color: $button-basic-text-color !important;
   box-shadow: none;
 }
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
   background: none !important;
-  color: $text-color !important;
+  color: $button-basic-text-color !important;
   box-shadow: none;
 }
 .ui.basic.buttons .button:active,
 .ui.basic.button:active {
   background: none !important;
-  color: $text-color !important;
+  color: $button-basic-text-color !important;
   box-shadow: none;
 }
 .ui.basic.buttons .active.button,
 .ui.basic.active.button {
   background: none;
   box-shadow: '' !important;
-  color: $text-color !important;
+  color: $button-basic-text-color !important;
 }
 .ui.basic.buttons .active.button:hover,
 .ui.basic.active.button:hover {
@@ -825,7 +825,7 @@
 
 /* Basic Group */
 .ui.basic.buttons .button {
-  border-left: 1px solid $input-border-color;
+  border-left: 1px solid $button-basic-border-color;
   box-shadow: none;
 }
 .ui.basic.vertical.buttons .button {
@@ -833,7 +833,7 @@
 }
 .ui.basic.vertical.buttons .button {
   border-left-width: 0px;
-  border-top: 1px solid $input-border-color ;
+  border-top: 1px solid $button-basic-border-color ;
 }
 .ui.basic.vertical.buttons .button:first-child {
   border-top-width: 0px;
@@ -862,7 +862,7 @@
   text-align: center;
   margin: 0em;
   width: 2.57142857em;
-  background-color: $base-color;
+  background-color: $button-background-color;
   color: '';
   box-shadow: -1px 0px 0px 0px transparent inset;
 }
@@ -983,7 +983,7 @@
   width: 1.78571429em;
   height: 1.78571429em;
   line-height: 1.78571429em;
-  color: $text-color;
+  color: $button-text-base-color;
   font-style: normal;
   font-weight: bold;
   box-shadow: 0px 0px 0px 1px transparent inset;
@@ -1011,7 +1011,7 @@
   display: block;
   margin: 0em;
   border-radius: 0em;
-  box-shadow: 0px 0px 0px 1px $input-border-color !important;
+  box-shadow: 0px 0px 0px 1px $button-basic-border-color !important;
 }
 
 /* Top / Bottom */
@@ -3161,8 +3161,8 @@
 /* Standard */
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $button-background-color;
+  color: $button-text-base-color;
   text-shadow: none;
   background-image: none;
 }
@@ -3171,60 +3171,60 @@
 }
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $button-background-color;
+  color: $button-text-hover-color;
   text-shadow: none;
 }
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $button-background-color;
+  color: $button-text-base-color;
   text-shadow: none;
 }
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $button-background-color;
+  color: $button-text-active-color;
   text-shadow: none;
 }
 .ui.secondary.buttons .active.button,
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $button-background-color;
+  color: $button-text-active-color;
   text-shadow: none;
 }
 
 /* Basic */
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
-  border-color: $input-border-color;
-  box-shadow: $base-color !important;
-  color: $text-color !important;
+  border-color: $button-basic-border-color;
+  box-shadow: $button-background-color !important;
+  color: $button-text-base-color !important;
 }
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
-  box-shadow: $base-color !important;
-  color: $text-color !important;
+  box-shadow: $button-background-color !important;
+  color: $button-text-hover-color !important;
 }
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  box-shadow: $base-color !important;
-  color: $text-color !important;
+  box-shadow: $button-background-color !important;
+  color: $button-text-base-color !important;
 }
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
-  box-shadow: $base-color !important;
-  color: $text-color !important;
+  box-shadow: $button-background-color !important;
+  color: $button-text-active-color !important;
 }
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  box-shadow: $base-color !important;
-  color: $text-color !important;
+  box-shadow: $button-background-color !important;
+  color: $button-text-active-color !important;
 }
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
   margin-left: -1px;
@@ -3465,7 +3465,7 @@
 }
 .ui.vertical.buttons {
   .ui.button.active {
-    background: $base-color;
+    background: $button-background-color;
     border-radius: $border-radius-sm;
     color: $title-color;
   }
