@@ -26,7 +26,7 @@
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: rgba(0, 0, 0, 0.87);
+  color: $input-text-base-color;
 }
 .ui.input input {
   margin: 0em;
@@ -41,10 +41,10 @@
   line-height: 1.2142em;
   font-family: $font-family;
   padding: 0.67861429em 1em;
-  background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
-  border-radius: 0.28571429rem;
+  background: $input-background-color;
+  border: 1px solid $input-border-color;
+  color: $input-text-base-color;
+  border-radius: $border-radius-sm;
   -webkit-transition: box-shadow 0.1s ease, border-color 0.1s ease;
   transition: box-shadow 0.1s ease, border-color 0.1s ease;
   box-shadow: none;
@@ -57,13 +57,13 @@
 
 /* browsers require these rules separate */
 .ui.input input::-webkit-input-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: $input-text-base-color;
 }
 .ui.input input::-moz-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: $input-text-base-color;
 }
 .ui.input input:-ms-input-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: $input-text-base-color;
 }
 
 
@@ -91,9 +91,9 @@
 
 .ui.input input:active,
 .ui.input.down input {
-  border-color: rgba(0, 0, 0, 0.3);
-  background: #FAFAFA;
-  color: rgba(0, 0, 0, 0.87);
+  border-color: $input-border-color;
+  background: $input-background-color;
+  color: $input-text-active-color;
   box-shadow: none;
 }
 
@@ -110,7 +110,7 @@
   width: 1.28571429em;
   height: 1.28571429em;
   border-radius: 500rem;
-  border: 0.2em solid rgba(0, 0, 0, 0.1);
+  border: 0.2em solid $input-border-color;
 }
 .ui.loading.loading.input > i.icon:after {
   position: absolute;
@@ -125,7 +125,7 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #767676 transparent transparent;
+  border-color: $input-border-color transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
@@ -137,22 +137,22 @@
 
 .ui.input.focus input,
 .ui.input input:focus {
-  border-color: #85B7D9;
-  background: #FFFFFF;
-  color: rgba(0, 0, 0, 0.8);
+  border-color: $input-border-color;
+  background: $input-background-color;
+  color: $input-text-active-color;
   box-shadow: none;
 }
 .ui.input.focus input::-webkit-input-placeholder,
 .ui.input input:focus::-webkit-input-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: $input-text-active-color;
 }
 .ui.input.focus input::-moz-placeholder,
 .ui.input input:focus::-moz-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: $input-text-active-color;
 }
 .ui.input.focus input:-ms-input-placeholder,
 .ui.input input:focus:-ms-input-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: $input-text-active-color;
 }
 
 /*--------------------
@@ -160,32 +160,32 @@
 ---------------------*/
 
 .ui.input.error input {
-  background-color: #FFF6F6;
-  border-color: #E0B4B4;
-  color: #9F3A38;
+  background-color: $input-background-color;
+  border-color: $red-color;
+  color: $input-text-active-color;
   box-shadow: none;
 }
 
 /* Error Placeholder */
 .ui.input.error input::-webkit-input-placeholder {
-  color: #e7bdbc;
+  color: $input-text-active-color;
 }
 .ui.input.error input::-moz-placeholder {
-  color: #e7bdbc;
+  color: $input-text-active-color;
 }
 .ui.input.error input:-ms-input-placeholder {
-  color: #e7bdbc !important;
+  color: $input-text-active-color !important;
 }
 
 /* Focused Error Placeholder */
 .ui.input.error input:focus::-webkit-input-placeholder {
-  color: #da9796;
+  color: $input-text-active-color;
 }
 .ui.input.error input:focus::-moz-placeholder {
-  color: #da9796;
+  color: $input-text-active-color;
 }
 .ui.input.error input:focus:-ms-input-placeholder {
-  color: #da9796 !important;
+  color: $input-text-active-color !important;
 }
 
 
@@ -327,7 +327,7 @@
   border-left-color: transparent;
 }
 .ui.labeled.input:not([class*="corner labeled"]) .label:first-child + input:focus {
-  border-left-color: #85B7D9;
+  border-left-color: transparent;
 }
 
 /* Regular Label on Right */
@@ -341,7 +341,7 @@
   border-bottom-left-radius: 0px;
 }
 .ui[class*="right labeled"].input input:focus {
-  border-right-color: #85B7D9 !important;
+  border-right-color: transparent !important;
 }
 
 /* Corner Label */
@@ -349,7 +349,7 @@
   top: 1px;
   right: 1px;
   font-size: 0.64285714em;
-  border-radius: 0em 0.28571429rem 0em 0em;
+  border-radius: 0em $border-radius-sm 0em 0em;
 }
 
 /* Spacing with corner label */
@@ -424,12 +424,12 @@
 .ui.action.input:not([class*="left action"]) > .dropdown:last-child,
 .ui.action.input:not([class*="left action"]) > .button:last-child,
 .ui.action.input:not([class*="left action"]) > .buttons:last-child > .button {
-  border-radius: 0px 0.28571429rem 0.28571429rem 0px;
+  border-radius: 0px $border-radius-sm $border-radius-sm 0px;
 }
 
 /* Input Focus */
 .ui.action.input:not([class*="left action"]) input:focus {
-  border-right-color: #85B7D9 !important;
+  border-right-color: transparent !important;
 }
 
 /* Button on Left */
@@ -446,12 +446,12 @@
 .ui[class*="left action"].input > .dropdown:first-child,
 .ui[class*="left action"].input > .button:first-child,
 .ui[class*="left action"].input > .buttons:first-child > .button {
-  border-radius: 0.28571429rem 0px 0px 0.28571429rem;
+  border-radius: $border-radius-sm 0px 0px $border-radius-sm;
 }
 
 /* Input Focus */
 .ui[class*="left action"].input > input:focus {
-  border-left-color: #85B7D9 !important;
+  border-left-color: transparent !important;
 }
 
 /*--------------------
