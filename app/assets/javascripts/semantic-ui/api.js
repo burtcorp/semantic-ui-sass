@@ -3,22 +3,15 @@
  * http://github.com/semantic-org/semantic-ui/
  *
  *
+ * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
  */
 
-;(function ($, window, document, undefined) {
+;(function ( $, window, document, undefined ) {
 
 "use strict";
-
-var
-  window = (typeof window != 'undefined' && window.Math == Math)
-    ? window
-    : (typeof self != 'undefined' && self.Math == Math)
-      ? self
-      : Function('return this')()
-;
 
 $.api = $.fn.api = function(parameters) {
 
@@ -283,7 +276,7 @@ $.api = $.fn.api = function(parameters) {
             return ($module.filter(selector.disabled).length > 0);
           },
           expectingJSON: function() {
-            return settings.dataType === 'json' || settings.dataType === 'jsonp';
+            return settings.dataType !== 'json' && settings.dataType !== 'jsonp';
           },
           form: function() {
             return $module.is('form') || $context.is('form');
@@ -483,7 +476,7 @@ $.api = $.fn.api = function(parameters) {
                 translatedResponse = ( $.isFunction(settings.onResponse) )
                   ? module.is.expectingJSON()
                     ? settings.onResponse.call(context, $.extend(true, {}, response))
-                    : settings.onResponse.call(context, response)
+                    : settings.onResponse.call(conetxt, response)
                   : false
               ;
               timeLeft = (timeLeft > 0)
@@ -662,7 +655,7 @@ $.api = $.fn.api = function(parameters) {
               .done(module.event.xhr.done)
               .fail(module.event.xhr.fail)
             ;
-            module.verbose('Created server request', xhr, ajaxSettings);
+            module.verbose('Created server request', xhr);
             return xhr;
           }
         },
