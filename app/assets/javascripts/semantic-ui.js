@@ -12509,6 +12509,20 @@ $.fn.search = function(parameters) {
                 result  = $result.data(metadata.result) || module.get.result(value, results),
                 returnedValue
               ;
+              // Duct Tape fix for search issue in the Advertiser app, based on Algolia results
+              if (!result) {
+                for (let i = 0; i < results.length; i++) {
+                  if (!results[i] || !results[i].results) {
+                    continue;
+                  }
+                  for (let j = 0; j < results[i].results.length; j++) {
+                    const element = results[i].results[j];
+                    if (element.name === value) {
+                      result = element
+                    }
+                  }
+                }
+              }
               if( $.isFunction(settings.onSelect) ) {
                 if(settings.onSelect.call(element, result, results) === false) {
                   module.debug('Custom onSelect callback cancelled default select action');
