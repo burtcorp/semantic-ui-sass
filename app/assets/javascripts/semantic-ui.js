@@ -12511,14 +12511,14 @@ $.fn.search = function(parameters) {
               ;
               // Duct Tape fix for search issue in the Advertiser app, based on Algolia results
               if (!result) {
-                for (let i = 0; i < results.length; i++) {
+                for (var i = 0; i < results.length; i++) {
                   if (!results[i] || !results[i].results) {
                     continue;
                   }
-                  for (let j = 0; j < results[i].results.length; j++) {
-                    const element = results[i].results[j];
+                  for (var j = 0; j < results[i].results.length; j++) {
+                    var element = results[i].results[j];
                     if (element.name === value) {
-                      result = element
+                      result = element;
                     }
                   }
                 }
